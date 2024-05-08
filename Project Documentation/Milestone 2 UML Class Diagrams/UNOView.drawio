@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2023-11-14T19:06:13.179Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.1" etag="1zXOIipEuvjZeDCZr5LA" type="device">
+  <diagram id="TMr968swyu9y46v5XVT0" name="Page-1">
+    <mxGraphModel dx="1102" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zRPy2oPNtm-Du713SVRI-1" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;UNOModelView&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="90" width="330" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-2" value="&lt;i&gt;handleUNOTurnUpdate&lt;/i&gt;(e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNODrawUpdate&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNODiscardUpdate&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNORoundUpdate&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOGameUpdate&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOShowAllPoints&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOHelpUpdate&lt;/i&gt;(&lt;/span&gt;): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOTurnUpdate&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOCallUNO&lt;/i&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;i&gt;handleUNOShowInvalid&lt;/i&gt;(&amp;nbsp;&lt;/span&gt;): void&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;handleUNONoDraw&lt;/i&gt;(): void&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;handleUNOShowChallengeFailed&lt;/i&gt;(): void&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;handleUNOShowChallengeSuccess&lt;/i&gt;(): void&lt;br&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;handleUNOPlayDrawn&lt;/i&gt;(top: Card): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-1">
+          <mxGeometry y="26" width="330" height="224" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-5" value="UNOView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="470" width="310" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-6" value="- model: UNOModel&lt;br&gt;- control: UNOController&lt;br&gt;- gameContentPane: JPanel&lt;br&gt;- gameStatus: JLabel&lt;br&gt;- panelTable: JPanel&lt;br&gt;- otherPlayerStatus: JLabel&lt;br&gt;- panelActions: JPanel&lt;br&gt;- draw: JButton&lt;br&gt;- panelTableCards: JPanel&lt;br&gt;- drawPile: JButton&lt;br&gt;- playerCard: JButton&lt;br&gt;- discardPile: JButton&lt;br&gt;- panelCurPlayer: JPanel&lt;br&gt;- playerStatus: JLabel&lt;br&gt;- panelHand: JPanel&lt;br&gt;- scrollPane: JScrollPane&lt;br&gt;- gameMenu: UNOMenu&lt;br&gt;- startContentPane: JPanel&lt;br&gt;- contentPane: JPanel&lt;br&gt;- htmlHelp: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-5">
+          <mxGeometry y="26" width="310" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-5">
+          <mxGeometry y="340" width="310" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-8" value="+ UNOView()&lt;br&gt;+ createMenuBar(): void&lt;br&gt;+ enableStatusMenu(): void&lt;br&gt;- createGamePanel(): void&lt;br&gt;+ createStartPanel(): void&lt;br&gt;+ createEndContentPane(): void&lt;br&gt;+ inputNumPlayers(): void&lt;br&gt;+ inputWildColours(): Colours&lt;br&gt;+ inputWildChallenge(name: String): bool&lt;br&gt;+ setToGamePanel(): void&lt;br&gt;+ setToStartPanel(): void&lt;br&gt;+ setToEndPanel(): void&lt;br&gt;+ updateGameStatus(): void&lt;br&gt;+ showPlayerNames(): void&lt;br&gt;+ showTurnHand(player: Player): void&lt;br&gt;+ clearPanelHand(): void&lt;br&gt;+ showDrawnCard(player: Player, pile: CardPile): void&lt;br&gt;+ showDiscardedCard(pile: CardPile): void&lt;br&gt;+ showGameWinner(name: String, points: int): void&lt;br&gt;+ showRoundWinner(name: String, points: int): void&lt;br&gt;+ showRoundNumber(round: int): void&lt;br&gt;+ showAllPoints(model: UNOModel): void&lt;br&gt;+ showCallUNO(player: Player): void&lt;br&gt;+ showInvalidCard(): void&lt;br&gt;+ showNoDraw(): void&lt;br&gt;+ showChallengeFailed(): void&lt;br&gt;+ showChallengeSuccess(): void&lt;br&gt;+ showHelp(): void&lt;br&gt;&lt;br&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOTurnUpdate&lt;/span&gt;(e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNODrawUpdate&lt;/span&gt;(e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNODiscardUpdate&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNORoundUpdate&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOGameUpdate&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOShowAllPoints&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOHelpUpdate&lt;/span&gt;(&lt;/span&gt;): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOTurnUpdate&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOCallUNO&lt;/span&gt;(&lt;/span&gt;e: UNOEvent): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOShowInvalid&lt;/span&gt;(&amp;nbsp;&lt;/span&gt;): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNONoDraw&lt;/span&gt;(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOShowChallengeFailed&lt;/span&gt;(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOShowChallengeSuccess&lt;/span&gt;(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;+ handleUNOPlayDrawn&lt;/span&gt;(top: Card): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-5">
+          <mxGeometry y="348" width="310" height="632" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-9" value="&lt;b&gt;JFrame&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-14" value="UNOMenu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="880" width="210" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-15" value="- gameMenu: JMenu&lt;br&gt;- statusMenu: JMenu&lt;br&gt;- helpMenu: JMenu&lt;br&gt;- scoreMenuItem: JMenuItem&lt;br&gt;- roundMenuItem: JMenuItem&lt;br&gt;- exitMenuItem: JMenuItem" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-14">
+          <mxGeometry y="26" width="210" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-14">
+          <mxGeometry y="140" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-17" value="+ UNOMenu()&lt;br&gt;+ getHelpMenu(): JMenu&lt;br&gt;+ getScoreMenuItem(): JMenuItem&lt;br&gt;+ getExitMenuItem(): JMenuItem&lt;br&gt;+ getRoundMenuItem(): JMenuItem&lt;br&gt;+ getStatusMenu(): JMenu" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zRPy2oPNtm-Du713SVRI-14">
+          <mxGeometry y="148" width="210" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-18" value="&lt;b&gt;JMenuBar&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="680" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-19" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.464;entryY=1.045;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zRPy2oPNtm-Du713SVRI-5" target="zRPy2oPNtm-Du713SVRI-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="940" as="sourcePoint" />
+            <mxPoint x="390" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zRPy2oPNtm-Du713SVRI-5" target="zRPy2oPNtm-Du713SVRI-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="527" y="400" />
+              <mxPoint x="270" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-21" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zRPy2oPNtm-Du713SVRI-14" target="zRPy2oPNtm-Du713SVRI-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="800" as="sourcePoint" />
+            <mxPoint x="180" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zRPy2oPNtm-Du713SVRI-22" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=-0.025;entryY=0.231;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zRPy2oPNtm-Du713SVRI-15" target="zRPy2oPNtm-Du713SVRI-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="1070" as="sourcePoint" />
+            <mxPoint x="440" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="UNO View" c4Type="ContainerScopeBoundary" c4Application="UNO Game" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="zRPy2oPNtm-Du713SVRI-23">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+            <mxGeometry x="70" y="60" width="770" height="1430" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

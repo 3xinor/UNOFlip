@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2023-11-14T22:46:31.755Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="6_oChO_cJnSvI1dfxNcy" version="22.1.1" type="device">
+  <diagram name="Page-1" id="u3iqeHXOyMc8-6l2yjpQ">
+    <mxGraphModel dx="2072" dy="1340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-10" value="UNOEvent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="500" width="360" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-11" value="- player: Player&lt;br&gt;- pile: CardPile" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-10">
+          <mxGeometry y="26" width="360" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-10">
+          <mxGeometry y="70" width="360" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-13" value="+ UNOEvent(model: UNOModel)&lt;br&gt;+ UNOEvent(model: UNOModel, player: Player)&lt;br&gt;+ UNOEvent(model: UNOModel, pile: CardPile)&lt;br&gt;+ UNOEvent(model: UNOModel, player: Player, pile: CardPile)&lt;br&gt;+ getPlayer(): Player&lt;br&gt;+ getCardPile(): CardPile" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-10">
+          <mxGeometry y="78" width="360" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-14" value="EventObject" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="290" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-15" value="# source: Object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-14">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-14">
+          <mxGeometry y="52" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-17" value="+ EventObject(source: Object)&lt;br&gt;+ getSource(): Object&lt;br&gt;+ toString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-14">
+          <mxGeometry y="60" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-18" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.497;entryY=1.093;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="E1Uk2r99ExC3ooH-BzHo-10" target="E1Uk2r99ExC3ooH-BzHo-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1160" y="460" as="sourcePoint" />
+            <mxPoint x="1130" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="E1Uk2r99ExC3ooH-BzHo-32" target="E1Uk2r99ExC3ooH-BzHo-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1455" y="210" as="sourcePoint" />
+            <mxPoint x="1463.88" y="114.42000000000007" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-28" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;ActionListener&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="70" width="270" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-29" value="&lt;i&gt;actionPerformed&lt;/i&gt;(e: ActionEvent): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-28">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-32" value="UNOController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="240" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-33" value="- model: UNOModel&lt;br&gt;- view: UNOView&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-32">
+          <mxGeometry y="26" width="270" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-32">
+          <mxGeometry y="70" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-35" value="+ UNOController(model: UNOModel)&lt;br&gt;+ askChallenge(name: String): bool&lt;br&gt;+ askColour(): Colours&lt;br&gt;+ setView(view: UNOView): void&lt;br&gt;+ actionPerformed(e: ActionEvent): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="E1Uk2r99ExC3ooH-BzHo-32">
+          <mxGeometry y="78" width="270" height="92" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="UNO Controller" c4Type="ContainerScopeBoundary" c4Application="UNO Game" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="E1Uk2r99ExC3ooH-BzHo-37">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+            <mxGeometry x="860" y="40" width="820" height="700" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="E1Uk2r99ExC3ooH-BzHo-38" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.664;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="E1Uk2r99ExC3ooH-BzHo-17" target="E1Uk2r99ExC3ooH-BzHo-35">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1300" y="490" as="sourcePoint" />
+            <mxPoint x="1370" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
